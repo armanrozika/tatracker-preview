@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: arial;
+}
+
+.img-wrapper {
+  width: 1120px;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+.role {
+  padding: 0 10px;
+}
+
+.role button {
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.role button:nth-child(1) {
+  background: green;
+  color: #fff;
+}
+
+.role button:focus {
+  outline: none;
+}
+
+.option {
+  padding: 10px 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.page {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.link, .link-mhs {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+}
+
+.link:hover, .link-mhs:hover {
+  color: #eab318;
+}
+
+#page-mahasiswa {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
