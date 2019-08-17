@@ -38,6 +38,8 @@ let link = document.querySelectorAll(".link");
 mhsImg.map((item, index) => {
   linkMhs[index].addEventListener("click", () => {
     var image = imgLink;
+    image.src =
+      "https://wpamelia.com/wp-content/uploads/2018/11/ezgif-2-6d0b072c3d3f.gif";
     var downloadingImage = new Image();
     downloadingImage.onload = function() {
       image.src = this.src;
@@ -58,6 +60,8 @@ mhsImg.map((item, index) => {
 dosenImg.map((item, index) => {
   link[index].addEventListener("click", () => {
     var image = imgLink;
+    image.src =
+      "https://wpamelia.com/wp-content/uploads/2018/11/ezgif-2-6d0b072c3d3f.gif";
     var downloadingImage = new Image();
     downloadingImage.onload = function() {
       image.src = this.src;
