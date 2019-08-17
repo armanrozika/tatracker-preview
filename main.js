@@ -37,7 +37,14 @@ let link = document.querySelectorAll(".link");
 
 mhsImg.map((item, index) => {
   linkMhs[index].addEventListener("click", () => {
-    imgLink.src = item;
+    var image = imgLink;
+    var downloadingImage = new Image();
+    downloadingImage.onload = function() {
+      image.src = this.src;
+    };
+    downloadingImage.src = item;
+    // console.log("kskksk");
+    //imgLink.src = item;
     for (let i = 0; i < linkMhs.length; i++) {
       if (i == index) {
         linkMhs[i].style.background = "#fff";
@@ -50,7 +57,13 @@ mhsImg.map((item, index) => {
 
 dosenImg.map((item, index) => {
   link[index].addEventListener("click", () => {
-    imgLink.src = item;
+    var image = imgLink;
+    var downloadingImage = new Image();
+    downloadingImage.onload = function() {
+      image.src = this.src;
+    };
+    downloadingImage.src = item;
+    //imgLink.src = item;
     for (let i = 0; i < link.length; i++) {
       if (i == index) {
         link[i].style.background = "#fff";
